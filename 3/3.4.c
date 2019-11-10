@@ -8,6 +8,9 @@
  * in this case n = -n won't work
  */
 
+void itoa(int n, char s[]);
+int abs(int n);
+
 void itoa (int n, char s[]) {
     int i, sign;
     i = 0, sign = n;
@@ -21,9 +24,9 @@ void itoa (int n, char s[]) {
     }
     s[i] = '\0';
 
-    reverse(s)
+    reverse(s);
 }
 
-void abs (int n) {
+int abs (int n) {
     return n < 0 ? -n : n;
 }
